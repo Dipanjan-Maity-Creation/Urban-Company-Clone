@@ -1,165 +1,70 @@
-# Urban-Company-Clone
-🏠 Urban Company Clone - Home Services Marketplace A full-stack, scalable on-demand platform for booking and managing home services like cleaning, plumbing, and beauty treatments. Inspired by Urban Company, this clone is built using React, Node.js, MongoDB, and Socket.IO, featuring real-time tracking, secure payments, and admin management.
+# Getting Started with Create React App
 
-🚀 Features
-👤 User Panel
-Registration/Login with JWT authentication and social login (optional).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Browse & filter services by price, location, and rating.
+## Available Scripts
 
-Book services with real-time tracking via Google Maps & Socket.IO.
+In the project directory, you can run:
 
-Secure payments using Stripe or Razorpay.
+### `npm start`
 
-Rate & review completed services.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-🧑‍🔧 Service Provider Panel
-Manage profile, availability, pricing.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Accept/Reject bookings in real time.
+### `npm test`
 
-Track earnings via Earnings Dashboard.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-🛠️ Admin Panel
-Manage users, providers, and service categories.
+### `npm run build`
 
-Control pricing, commissions, and coupons.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-View system-wide analytics (bookings, revenue, usage).
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-⚡ Real-Time Features
-Live service provider tracking with Google Maps API + Socket.IO.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Booking update notifications via Firebase.
+### `npm run eject`
 
-Dashboard updates in real time.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-💡 Additional Highlights
-Responsive UI (Material-UI / Tailwind CSS).
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Role-based authentication (JWT).
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Secure API access with middleware protections.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Modular, maintainable folder structure.
+## Learn More
 
-🛠 Tech Stack
-Layer	Tech
-Frontend	React, Redux, React Router, Axios, Material-UI/Tailwind
-Backend	Node.js, Express.js, MongoDB, Mongoose
-Real-time	Socket.IO, Firebase Cloud Messaging
-Maps	Google Maps API
-Payments	Stripe or Razorpay
-Auth	JWT
-Deployment	AWS / GCP / Vercel / Netlify (customizable)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-📁 Project Structure
-bash
-Copy
-Edit
-urban-company-clone/
-├── client/                 # React frontend
-│   ├── src/
-│   │   ├── components/     # Reusable UI elements
-│   │   ├── pages/          # Pages (Home, Services, Booking, etc.)
-│   │   ├── redux/          # State slices and store
-│   │   └── assets/         # Static files (images, styles)
-├── server/                 # Node.js backend
-│   ├── routes/             # API routes (auth, services, bookings)
-│   ├── models/             # MongoDB schemas
-│   ├── controllers/        # Route handlers
-│   └── middleware/         # Auth & validation
-├── .env                    # Environment variables
-├── README.md               # Documentation
-└── package.json            # Scripts and dependencies
-🔧 Getting Started
-🔗 Prerequisites
-Node.js (>= 14.x)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-MongoDB (Atlas or Local)
+### Code Splitting
 
-API keys:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Google Maps
+### Analyzing the Bundle Size
 
-Stripe / Razorpay
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Firebase (for notifications)
+### Making a Progressive Web App
 
-💻 Installation
-Clone the repo:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/urban-company-clone.git
-Install dependencies:
+### Advanced Configuration
 
-bash
-Copy
-Edit
-cd client && npm install
-cd ../server && npm install
-Configure environment variables (.env):
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-env
-Copy
-Edit
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-STRIPE_KEY=your_stripe_key
-GOOGLE_MAPS_API_KEY=your_maps_key
-FIREBASE_SERVER_KEY=your_firebase_key
-Start the application:
+### Deployment
 
-bash
-Copy
-Edit
-cd server && npm run start
-cd ../client && npm start
-📱 Usage
-Access frontend: http://localhost:3000
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Access backend API: http://localhost:5000
+### `npm run build` fails to minify
 
-Admin Panel: /admin route (credentials required)
-
-Register as a customer or service provider, then login to explore
-
-📈 Future Enhancements
-✅ Server-side rendering with Next.js
-
-🌐 Multi-language support (i18n)
-
-🤖 AI-powered recommendations using xAI APIs
-
-📊 Enhanced analytics using Chart.js or Recharts
-
-🔐 OAuth login (Google, Facebook)
-
-🤝 Contributing
-Contributions are welcome! Here's how:
-
-bash
-Copy
-Edit
-# 1. Fork the repository
-# 2. Create your feature branch
-git checkout -b feature/your-feature
-
-# 3. Commit changes
-git commit -m 'Add your feature'
-
-# 4. Push to GitHub
-git push origin feature/your-feature
-
-# 5. Open a Pull Request
-📄 License
-This project is licensed under the MIT License.
-
-📬 Contact
-For feedback or support:
-
-Email: your-email@example.com
-
-Issues: GitHub Issues
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
