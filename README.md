@@ -35,6 +35,12 @@ A full-stack, scalable on-demand platform for booking and managing home services
 - 🔐 Role-based authentication with JWT & secure APIs
 - 🧱 Modular, maintainable folder structure
 
+- 💻 Live Demo
+
+
+https://github.com/user-attachments/assets/04f34b2a-ac43-4ca2-afde-7948cb0ea308
+
+
 ---
 
 ## 🛠 Tech Stack
